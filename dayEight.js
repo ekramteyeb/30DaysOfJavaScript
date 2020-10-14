@@ -282,3 +282,5 @@ const products = [
         likes: ['fg12cy']
     }
 ]
+
+console.log(products)

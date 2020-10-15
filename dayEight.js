@@ -362,25 +362,45 @@ console.log(products[2].ratings)
  */
 // Q 3 b 
 
-
-
-function averageRating(product){
+/* function averageRating(product){
     let response = true
     let averageRate = 0
-    let arr = ''
+    
     for (let index = 0; index < products.length; index++) {
         if (product.toUpperCase() === products[index].name.toUpperCase()){
-           //averageRate = products[index].ratings.reduce((a,b) => a.rate + b.rate)/products[index].ratings.length
-           arr = products[index].ratings.reduce(function(acc,cur, index, array){
-               return  array[index]
-           })
+           averageRate = products[index].ratings
+            averageRate.length > 0 ? averageRate.reduce((a,b) => a.rate + b.rate)/products[index].ratings.length : averageRate = ' not calculated O rating'
            response = true
            break;
         }else{
             response = false
         }
     }
-    return arr
-    //return response === false ? 'The product is not available ' : 'The average rating of the product is ' + averageRate 
+    
+    return response === false ? 'The product is not available ' : 'The average rating of the product is ' + averageRate 
 }
-console.log(averageRating('tv'))
+console.log(averageRating('Laptop')) */
+
+// Q 4 
+function likeProduct(product, userId){
+    let response = ''
+    let likeReport  = ''
+
+    for (let index = 0; index < products.length; index++) {
+        if (product.toUpperCase() === products[index].name.toUpperCase()) {
+            likeReport = products[index].likes
+            likeReport =  likeReport.includes(userId) ? likeReport.splice(likeReport.indexOf(userId),1) : likeReport.push(userId)
+            response = true
+            break;
+        } else {
+            response = false
+        }
+    }
+
+    return response === false ? 'The product is not available ' : 'The product like/dislike done'
+}
+
+console.log(likeProduct('tv', 'kkkkkkk'))
+console.log(products)
+console.log(likeProduct('tv', 'kkkkkkk'))
+console.log(products)

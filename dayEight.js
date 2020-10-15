@@ -16,7 +16,7 @@ console.log(dog.bark()) */
 //console.log(dog.getDogInfo())
 //console.log(Object.values(dog)) */
 
-const users = {
+/* const users = {
     Alex: {
         email: 'alex@alex.com',
         skills: ['HTML', 'CSS', 'JavaScript'],
@@ -67,7 +67,7 @@ const users = {
         points: 40
     },
     
-}
+} */
 
 /* let arrNums = [23, 24, 29, 21, 19]
 let maxnum = arrNums[0]
@@ -283,4 +283,104 @@ const products = [
     }
 ]
 
-console.log(products)
+/* // a 
+function signUp(user){
+    let resp = ''
+    let arrEmails = []
+    for (let index = 0; index < users.length; index++) {
+        arrEmails.push(users[index].email)
+    }
+    if(arrEmails.includes(user.email)){
+        resp += 'This email is already taken'
+    }else{
+        users.push(user)
+        resp += 'You are successfully registerd'
+    }
+
+    return resp
+}
+
+let hussen = {
+    _id:'xyz124',    
+    username: 'Hussen',
+    email: 'hussen@gmail.com',
+    password: '232522',
+    createdAt: '08/01/2020 9:50 AM',
+    isLoggedIn: false
+
+}
+
+console.log(signUp(hussen))
+console.log(users) */
+
+//b 
+/* function signIn(email,password){
+    let resp = true
+    for (let index = 0; index < users.length; index++) {
+       if(email === users[index].email){
+            if(password === users[index].password){
+                users[index].isLoggedIn = true
+                resp = 'Your are logged in successfuly'
+            }else{
+                resp = 'the password is not valid'
+            }
+            break;
+       }else{
+           resp = false
+       }
+        
+    }
+   return resp === false ? 'The email is not found' : resp 
+}
+console.log(signIn('martha@martha.com', '123222'))
+
+console.log(users) */
+// Q 3 a 
+
+/* function rateProduct(product,userId, rate){
+    let response = ''
+    let rating = {
+        userId: userId,
+        rate: rate
+    }
+    for (let index = 0; index < products.length; index++) {
+        if(product.toUpperCase() === products[index].name.toLocaleUpperCase()){
+            products[index].ratings.push(rating)
+            response = 'Rating is done to the ' + ' ' + product
+        }else{
+            response = false
+        }
+        
+    }
+    
+
+    return response === false ? 'The product is not found' : response
+}
+console.log(rateProduct('tv','xxxxx', 5))
+console.log(products[2].ratings)
+
+ */
+// Q 3 b 
+
+
+
+function averageRating(product){
+    let response = true
+    let averageRate = 0
+    let arr = ''
+    for (let index = 0; index < products.length; index++) {
+        if (product.toUpperCase() === products[index].name.toUpperCase()){
+           //averageRate = products[index].ratings.reduce((a,b) => a.rate + b.rate)/products[index].ratings.length
+           arr = products[index].ratings.reduce(function(acc,cur, index, array){
+               return  array[index]
+           })
+           response = true
+           break;
+        }else{
+            response = false
+        }
+    }
+    return arr
+    //return response === false ? 'The product is not available ' : 'The average rating of the product is ' + averageRate 
+}
+console.log(averageRating('tv'))

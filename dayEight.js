@@ -382,7 +382,7 @@ console.log(products[2].ratings)
 console.log(averageRating('Laptop')) */
 
 // Q 4 
-function likeProduct(product, userId){
+/* function likeProduct(product, userId){
     let response = ''
     let likeReport  = ''
 
@@ -404,3 +404,4 @@ console.log(likeProduct('tv', 'kkkkkkk'))
 console.log(products)
 console.log(likeProduct('tv', 'kkkkkkk'))
 console.log(products)
+ */

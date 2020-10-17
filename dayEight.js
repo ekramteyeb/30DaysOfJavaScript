@@ -278,10 +278,15 @@ const products = [
         name: 'TV',
         description: 'Smart TV:Procaster',
         price: 400,
-        ratings: [{ userId: 'fg12cy', rate: 5 }],
+        ratings: [{ userId: 'fg12cy', rate: 5 }, { userId: 'nnnnn', rate: 5 }],
         likes: ['fg12cy']
     }
 ]
+/* [1,2,33,4].reduce((a,b) => a + b, 0)  
+//0 + 1 
+//1 + 2
+//3 
+acc, cur, index , arr  */
 
 /* // a 
 function signUp(user){
@@ -369,7 +374,7 @@ console.log(products[2].ratings)
     for (let index = 0; index < products.length; index++) {
         if (product.toUpperCase() === products[index].name.toUpperCase()){
            averageRate = products[index].ratings
-            averageRate.length > 0 ? averageRate.reduce((a,b) => a.rate + b.rate)/products[index].ratings.length : averageRate = ' not calculated O rating'
+           averageRate = averageRate.length > 0 ? averageRate.reduce((a,b) => a.rate + b.rate)/products[index].ratings.length : averageRate = ' not calculated O rating'
            response = true
            break;
         }else{
@@ -379,7 +384,7 @@ console.log(products[2].ratings)
     
     return response === false ? 'The product is not available ' : 'The average rating of the product is ' + averageRate 
 }
-console.log(averageRating('Laptop')) */
+console.log(averageRating('tv')) */
 
 // Q 4 
 /* function likeProduct(product, userId){
@@ -387,6 +392,7 @@ console.log(averageRating('Laptop')) */
     let likeReport  = ''
 
     for (let index = 0; index < products.length; index++) {
+
         if (product.toUpperCase() === products[index].name.toUpperCase()) {
             likeReport = products[index].likes
             likeReport =  likeReport.includes(userId) ? likeReport.splice(likeReport.indexOf(userId),1) : likeReport.push(userId)
@@ -400,8 +406,26 @@ console.log(averageRating('Laptop')) */
     return response === false ? 'The product is not available ' : 'The product like/dislike done'
 }
 
-console.log(likeProduct('tv', 'kkkkkkk'))
+console.log(likeProduct('mobile phone', 'kkkkkk'))
 console.log(products)
-console.log(likeProduct('tv', 'kkkkkkk'))
-console.log(products)
+console.log(likeProduct('mobile phone', 'kkkkkk'))
+console.log(products) 
+
  */
+ /* const camel = {
+     name:'adal',
+     height:4,
+     weight:2000,
+     age:50,
+     children:['chala','gemechu'],
+     isForRiding:false
+ }
+
+ console.log(camel['height'])
+ console.log(camel.height)
+ console.log(camel.hasOwnProperty('name')) */
+ /* function argum(...arr){
+      
+     return Math.max(...arr)
+ }
+ console.log(argum(122,223,44,55)) */

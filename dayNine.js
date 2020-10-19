@@ -1,4 +1,5 @@
 const allCountries = require('./countries_data')
+
 const countriesLarge = require('./countriesLarge')
 
 
@@ -127,7 +128,7 @@ console.log(productPrices) */
 
 console.log(categorizedCountries(countriesLarge)) */
 // Q 4 
-    const arrObject = (arr) => {
+   /*  const arrObject = (arr) => {
         let objects = [],current, occurance = 0     
         let letters = arr.map(element => element[0])
 
@@ -144,22 +145,25 @@ console.log(categorizedCountries(countriesLarge)) */
         }
         return objects
     }
-    console.log(arrObject(countriesLarge))
+    console.log(arrObject(countriesLarge)) */
 
     //console.log([2,3,4,5,5,6,5].filter(el => el === 5).length)
 
 
   // Level 3 
+
 //Q 2 
-/* function mostSpokenLanguages (countries, num){
+ /* function mostSpokenLanguages (countries,num){
+
     let languages = [], country, mostSpoken = []
         countries.forEach(element => {
-            element.languages.forEach(el => languages.push(el))
+            element.languages.forEach(lang => languages.push(lang))
         });
     
     for (let index = 0; index < num; index++) {
         languages.includes(country) ? languages = languages.filter(lang => lang !== country): languages
-     let object = {}, count = 0, currentValue;
+     
+        let object = {}, count = 0, currentValue;
          for (let i = 0; i < languages.length; i++) {
              currentValue = languages[i];
              object.hasOwnProperty(currentValue) ? ++object[currentValue] : object[currentValue] = 1;
@@ -167,19 +171,16 @@ console.log(categorizedCountries(countriesLarge)) */
              if (object[currentValue] > count){
                 
                 count = object[currentValue], country = currentValue 
-                
              }
               
          }
         
         mostSpoken.push({country,count})
-    
-         
     }
     return mostSpoken;
        
 }
-console.log(mostSpokenLanguages(allCountries,3)) */
+console.log(mostSpokenLanguages(allCountries,15))  */
 // Question 2 
 /* function mostSpokenLanguages(countries, num) {
 
@@ -221,9 +222,19 @@ console.log(mostSpokenLanguages(allCountries, 10)) */
 
 
 console.log(mostPopulatedCountries(allCountries,10)) */
-// Question 4 
+ // Question 4 
 
- /* const statistics = {
+ /*
+const obj = {
+    name:'abdu',
+    lname:'saimo',
+    fullName:function(){
+        return this.name + this.lname
+    }
+}
+
+  const statistics = {
+
     ages:[31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26],
     sorted: function () {return this.ages.sort()}, 
     count:function(){return this.ages.length},
@@ -243,15 +254,15 @@ console.log(mostPopulatedCountries(allCountries,10)) */
         return {mode,count};
      },
     var: function(){
-         return  this.sorted().reduce((a, b, index, arr) => (a + (Math.pow((b - this.mean()), 2)) / this.count()),0).toFixed(1)
+         return  this.sorted().reduce((a, b, index, arr) => (a + (Math.pow((b - this.mean()),2)) / this.count()),0).toFixed(1)
     },
     std:function (){
         return Math.sqrt(this.sorted().reduce((a,b,index,arr) => (a + (Math.pow((b - this.mean()),2))/this.count()),0)).toFixed(1)
         //return Math.sqrt(this.var()).toFixed(1)
     },
-    /* freqDist: function(){
+    freqDist: function(){
         return this.sorted().map(element => [element, this.sorted().filter(el => el === element).length])
-    }
+    },
 
    describe:function(){
        return `
@@ -267,10 +278,13 @@ console.log(mostPopulatedCountries(allCountries,10)) */
         Standard Deviation:  ${this.std()}`
    }
 }
-console.log(statistics.describe()) 
 
-console.log(allCountries[0])
-
+//console.log(statistics.describe()) 
+//console.log(statistics.median())
+//console.log(allCountries[0])
+console.log(statistics.std())
+console.log(statistics.var())
+console.log(statistics.freqDist()) */
 
 /* let ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
 

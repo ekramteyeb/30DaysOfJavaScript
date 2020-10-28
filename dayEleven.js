@@ -8,7 +8,10 @@ const rectangle = {
     width: 20,
     height: 10,
     area: 200,
-    perimeter: 60
+    perimeter: 60,
+    area: function(){
+        return this.width * this.height
+    }
 }
 const users = [
     {

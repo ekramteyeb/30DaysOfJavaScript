@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script></script>
+</head>
+<body>
+    <h1>Hello practice</h1>
+    <h1>This is another h1 element</h1>
+    <p class="text">This is paragraph</p>
+    <p class="text">This is another paragraph</p>
+    <p class="text">This is another paragraph</p>
+    <p class="text">This is another paragraph</p>
+    
+    <div id ="div">
+        <p>This is part of our div</p>
+    </div>
+    <h2 class="h5">This is h5 element </h2>
+
+</body>
+</html>
+
+
+<script>
+    document.getElementById('div').style.cssText = 'width:200px;height:200px;background-color:blue;'
+    document.getElementsByTagName('h1')[0].style.cssText = 'color:blue;'
+    document.getElementsByTagName('h1')[1].style.cssText = 'color:green;'
+
+    let texts = document.getElementsByClassName('text')
+    for (const text of texts) {
+        text.style.cssText = 'color:red; font-size: 20px;'
+    }
+    document.querySelector('.h5').style.color = 'cyan'
+
+</script>

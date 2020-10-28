@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript for Everyone:DOM</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Asabeneh Yetayeh challenges in <span>2020</span></h1>
+        <h2>30DaysOfJavaScript Challenge</h2>
+        
+        <ul>
+            <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavaScript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullStack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function generateHexaColor(){
+        let string = 'abcdef0123456789'
+        let hexa = '#', hexa2 = '#'
+        for (let index = 0; index < 6; index++) {
+            let random = Math.floor(Math.random() * string.length)
+            let random2 = Math.floor(Math.random() * string.length)
+            hexa += string[random]
+            hexa2 += string[random2]
+        }
+        document.querySelector('h1 span').style.color = hexa
+        document.querySelector('.timediv').style.backgroundColor = hexa2
+    }
+    let wrapper = document.querySelector('.wrapper')
+    let ul = document.querySelector('ul')
+    document.querySelector('h1 span').style.fontSize = '50px'
+
+    document.querySelector('body').style.cssText = 'width:50%; margin:auto; text-align: center'
+    document.querySelector('h2').style.cssText = 'text-decoration:underline;'
+    wrapper.style.cssText = 'width:100%;'
+
+
+    let timediv = document.createElement('div')
+    timediv.textContent = new Date().toDateString()
+    timediv.setAttribute('class', 'timediv')
+
+    wrapper.insertBefore(timediv,ul)
+
+    timediv.style.cssText = 'background-color:blue; width:50%;font-size:20px;margin-left:130px;'
+
+    
+    setInterval(() => generateHexaColor() , 1000)
+    
+    ul.style.listStyle = 'none'
+    ul.style.textAlign = 'left'
+
+    let lis = document.getElementsByTagName('li')
+    
+    for (let index = 0; index < lis.length; index++) {
+        let li = lis[index]
+        li.style.cssText = 'width:100%; height:40px; margin:2px;font-size:20px; padding-left:10px'
+        
+        if(index == 0){
+            li.style.backgroundColor = '#5BBC7A'
+        }else if(index == 1){
+            li.style.backgroundColor = '#F7DC5C'
+
+        }else{
+            li.style.backgroundColor = '#EB695B'
+
+        }
+        
+        
+    }
+
+
+</script>

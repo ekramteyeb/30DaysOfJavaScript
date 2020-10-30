@@ -60,16 +60,16 @@ const asabenehChallenges2020 = {
             {
                 social: 'LinkedIn',
                 url: 'https://www.linkedin.com/in/asabeneh/',
-                fontawesomeIcon: '<i class="fab fa-linkedin"></i>'
+                fontawesomeIcon: '<i class="fa fa-linkedin"></i>'
             },
             {
                 social: 'Twitter',
                 url: 'https://twitter.com/Asabeneh',
-                fontawesomeIcon: '<i class="fab fa-twitter-square"></i>'
+                fontawesomeIcon: '<i class="fa fa-twitter-square"></i>'
             },
             {
                 social: 'Github',
-                fontawesomeIcon: '<i class="fab fa-github-square"></i>',
+                fontawesomeIcon: '<i class="fa fa-github-square"></i>',
                 url: 'https://github.com/Asabeneh'
             },
             {

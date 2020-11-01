@@ -4,14 +4,32 @@ body{
     sans-serif;
     text-align: center;
     margin:auto;
-    width:70%;
+    
+    background-color:#EFEFEF;
 }
 .wrapper{
-    
-
+     width:70%;
+     margin:auto;
 }
+
 h1 {
-    color:orange;
+    color:#F2A93B;
     font-size: 44px;
     margin-bottom:-12px;
+}
+.populations, .languages{
+    background-color:#F2A93B;
+    border:none;
+    padding:6px;
+    width:18%;
+
+}
+.title{
+   border-bottom: #E7E6E6 solid;
+   width:100%;
+  
+}
+.buttons{
+    background-color:#F3F3F3;
+    padding-top:20px;
 }

@@ -4,22 +4,57 @@ body{
     padding-top:0px;
     
 }
+.backPhoto{
+    background-image: linear-gradient(rgba(9, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./globe-2.jpg');
+    background-color: #895BE6;
+    height: 350px;
+    size:50%;
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+.countrybuttons {
+    background-image: linear-gradient(rgba(9, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./map_image.jpg');
+    background-color: #895BE6;
+    height: 350px;
+    size:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 .header {
     
-    background-color: mediumturquoise;
     color:white;
     border:1px solid;
     padding: 80px;
+   
     
 }
 .content{
     width:70%;
     margin:auto;
+    background-color: #cccccc;
 }
 .input {
     
     width:40%;
     padding:6px;
     border-radius: 3em;
+    text-align: center;
 
+}
+.start, .searchbutton, .switch {
+    background-color:#895BE6;
+    padding:9px;
+    border:none;
+    font-size:9px;
+    color:white;
+    border-radius:0.5em;
+}
+h1{
+    font-size: 26px;
 }

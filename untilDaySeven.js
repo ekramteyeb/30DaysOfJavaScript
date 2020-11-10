@@ -52,7 +52,7 @@ const webTechs = [
     'CSS',
     'JavaScript',
     'React',
-    'Redux',
+    'Redux', 
     'Node',
     'MongoDB'
 ]

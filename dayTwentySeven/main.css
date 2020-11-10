@@ -1,0 +1,69 @@
+body{
+    font-family:"Trebuchet MS",
+    Helvetica,
+    sans-serif;
+    
+    margin:auto;
+
+    background-color:#EFEFEF;
+
+}
+.container{
+    margin:auto;
+    width:75%;
+    padding:20px;
+
+}
+h1{
+    font-size:40px;
+}
+.role{
+    background-color: #EDDFDE;
+    padding:15px;
+}
+.animateDiv {
+    position: relative;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {left: -5px;}
+    to {left: 50px;}
+}
+.bio{
+    padding-top:20px;
+}
+.challenges{
+    text-align: center;
+    margin:auto;
+    width:90%;
+    
+}
+.course{
+    
+    display:inline-table;
+    width:27%;
+    margin:20px;
+    height: 100px;
+    padding-top:60px;
+    background-color: rgba(252, 251, 250, 0.993);
+    border:none;
+    border-radius:1em;
+}
+.teachings p span{
+    
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    
+}
+@keyframes example {
+    from {
+        filter: blur(2px);
+        -webkit-filter: blur(3px);
+    }
+    to {
+       filter: blur(0px);
+       -webkit-filter: blur(0px);
+    }
+}

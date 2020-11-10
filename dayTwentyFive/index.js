@@ -5,22 +5,26 @@ let dataDiv = document.querySelector('.datas')
 document.querySelector('.title h5 span').innerHTML = countries.length
 
 //handles click to population button
+
 const populationFunc = () => {
 
         dataDiv.innerHTML = ''
         document.querySelector('.buttons p').innerHTML = ''
         document.querySelector('.buttons p').innerHTML = '10 Most populated countries in the wolrd'
+    
         let countriesSorted = countries.sort(function (a, b) {
             if (a.population < b.population) return 1
             if (a.population > b.population) return -1
             return 0
         })
+
     let totalPopulation = countries.reduce((a, b) => a + b.population,0)
 
 
 
         for (let index = 0; index < 10; index++) {
             let div = document.createElement('div')
+
             let bar = document.createElement('div')
             let barDiv = document.createElement('div')
             barDiv.style.cssText = 'width:75%; display:inline-block;'
@@ -62,29 +66,35 @@ const populationFunc = () => {
 
 }
 //displays population graph when population button is clicked
+
 document.querySelector('.populations').addEventListener('click', populationFunc)
-//display population graph when the page loads
+
+
+//displays population graph/data when the page loads
 populationFunc()
 
 //handles click on  Languages  button
-document.querySelector('.languages').addEventListener('click', () => {
+document.querySelector('.languages').addEventListener('click',() => {
 
     dataDiv.innerHTML = ''
     document.querySelector('.buttons p').innerHTML = ''
     document.querySelector('.buttons p').innerHTML = '10 Most spoken languages in the world'
    
     let allLanguages = []
+
     countries.forEach(country => allLanguages.push(...country.languages))
 
     let languageSet = new Set (allLanguages)
 
     let count = 0
+    //array of objects 
     let languagesAndCount = []
 
     for (const language of languageSet) {
         count = allLanguages.filter(lang => lang === language).length
         languagesAndCount.push({count,language})
     }
+
     let sortedAllLanguages = languagesAndCount.sort((a,b) => {
         if(a.count < b.count) return 1
         if(a.count > b.count) return -1
@@ -99,8 +109,10 @@ document.querySelector('.languages').addEventListener('click', () => {
         let barDiv = document.createElement('div')
         barDiv.style.cssText = 'width: 71%; display:inline-block;'
         barDiv.appendChild(bar)
+
         let countDiv = document.createElement('div')
         countDiv.style.cssText = 'float:right;'
+
         let language = document.createElement('div')
         let count = sortedAllLanguages[index].count
         countDiv.append(count)
@@ -114,7 +126,6 @@ document.querySelector('.languages').addEventListener('click', () => {
         
         div.append(language, barDiv, countDiv)
         dataDiv.append(div)
-
     }
 
 })

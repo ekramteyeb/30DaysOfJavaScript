@@ -1,4 +1,4 @@
-const countries = [
+let countries = [
     {
         name: 'Afghanistan',
         capital: 'Kabul',

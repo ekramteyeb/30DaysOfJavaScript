@@ -1,0 +1,42 @@
+body{
+   font-family:"Trebuchet MS",
+   Helvetica,
+   sans-serif;
+   margin:auto;
+   background-color:#EFEFEF;
+   text-align: center;
+}
+.container{
+    margin:auto;
+    width:75%;
+}
+.input{
+    padding:8px;
+    border:solid #E5C9C5 0.5px;
+    width:17.5%;
+}
+.btnaddplayer{
+     padding:8px;
+     border:solid #E5C9C5 0.5px;
+     background-color: #E5C9C5;
+     width:18%;
+}
+.results div div {
+    
+    display: inline-block;
+    width:25%;
+    
+}
+.results div div button {
+
+    display: inline-block;
+    margin:5px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background-color:white;
+
+}
+.error {
+     color: red;
+}

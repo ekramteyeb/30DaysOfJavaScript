@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WORLD COUNTRIES LIST</title>
+</head>
+<body>
+    
+        <div class="header">
+                <h1>WORLD COUNTRIES LIST</h1>
+                <p>Total Number of Countries :
+                    <span></span>
+                </p>
+                <p></p>
+        </div>
+        <div class="buttons">
+
+            <input class="input" type="text" placeholder="Search country" name="search">
+            <i class="fa fa-search"></i>
+            <h3></h3>
+
+            <button class="btne name">NAME<span></span></button>
+            <button class="btne capital">CAPITAL<span></span></button>
+            <button class="btne population">POPULATION<span></span></button>
+            
+            <div class="graph">
+                <i class="fa fa-bar-chart" style="font-size:24px; color:orange;"></i>
+
+            </div>
+            <br>
+            <br>
+            
+        </div>  
+        <div class="content"> </div>
+
+        <div class="buttonsdiv">
+            <button onclick="event.stopPropagation()" class="populations">POPULATIONS</button>
+            <button onclick="event.stopPropagation()" class="languages">LANGUAGES</button>
+            <p> </p>
+        </div>
+        <div class="wrapper">
+            <div class="datas"></div>
+        </div>
+
+    <script src="./countries_data.js"></script>
+    <script src="./chart.js"></script>
+    <script src="./index.js"></script>
+    
+    </body>
+</html>

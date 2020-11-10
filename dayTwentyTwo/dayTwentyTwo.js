@@ -4,9 +4,7 @@
 
 
 document.getElementsByClassName('wrapper')[0].style.cssText = 'margin:auto; width:70%;text-align:center'
-
-
-    
+   
     
 let button 
     for (let index = 0; index < 102; index++) {

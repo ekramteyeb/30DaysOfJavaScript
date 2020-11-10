@@ -1,0 +1,104 @@
+
+body{
+    margin:auto;
+    text-align: center;
+    padding:0px;
+    margin:0;
+    font-family: "Lucida Sans Unicode",
+    "Lucida Grande",
+    sans-serif;
+}
+.buttonCountries img {
+   /*  background-image: linear-gradient(rgba(9, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./globe-2.jpg'); */
+    /* background-color: #895BE6; */
+    height: 100px;
+    width:120px;
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+ 
+.header {
+    border:1px solid;
+    padding: 1px;
+    background-color:#F1EFEF;
+    border:none;
+}
+.buttons{
+    margin-top:20px;
+}
+.btne{
+    width:12%;
+    border:none;
+    padding:6px;
+    border-radius:1em;
+    background-color:#F2A93B;
+}
+.graph{
+    display:inline;
+    padding-top:10px;
+    
+}
+.content{
+    width:100%;
+    margin:auto;
+    background-color:#EFEFEF;
+   
+}
+.input {
+    width:40%;
+    padding:6px;
+    border-radius: 3em;
+    text-align: center;
+}
+.start, .searchbutton, .switch {
+    background-color:#895BE6;
+    padding:9px;
+    border:none;
+    font-size:9px;
+    color:white;
+    border-radius:0.5em;
+}
+h1{
+    font-size: 26px;
+    color:#F2A93B;
+}
+
+/* Css from day twenty five for graph list of countries */
+
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+/* h1 {
+    color: #F2A93B;
+    font-size: 44px;
+    margin-bottom: -12px;
+} */
+
+.populations,
+.languages {
+    background-color: #F2A93B;
+    border: none;
+    padding: 6px;
+    width: 18%;
+
+}
+
+/* .title {
+    border-bottom: #E7E6E6 solid;
+    width: 100%;
+
+} */
+
+.buttons {
+    background-color: #F3F3F3;
+    padding-top: 20px;
+}
+.buttonsdiv{
+    margin-top:20px;
+    display:none;
+}

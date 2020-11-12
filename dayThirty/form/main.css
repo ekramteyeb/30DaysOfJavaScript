@@ -1,19 +1,22 @@
 body{
     text-align:center;
-    background-color: #FFFFFF;
+    background-color:#EEEEEE;
 }
 .container{
     width:40%;
     margin:auto;
+    border:1px #F5F8FA solid;
+    padding:3% 7%;
+    background-color: #FFFFFF;
 }
 .form{
     font-size:21px;
     text-align:left;
+
 }
 input{
     padding:7px;
-    width:100%;
-    margin:0px 0px;
+    width:90%;
 }
 p{
     font-size:15px;
@@ -21,3 +24,4 @@ p{
 .form p{
     color:orange;
 }
+

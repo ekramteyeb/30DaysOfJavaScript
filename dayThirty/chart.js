@@ -70,18 +70,22 @@ const populationFunc = (countries) => {
 
 
 document.querySelector('.populations').addEventListener('click', () => populationFunc(sortedCountries))
-let togglerButtons = true
+//let togglerButtons = true
 document.querySelector('.graph').addEventListener('click', () => {
     let buttonsdiv = document.querySelector('.buttonsdiv')
     if (togglerButtons){
-
-       buttonsdiv.style.cssText = 'display:block;'
+        document.querySelector('.datas').focus();
+       //buttonsdiv.style.cssText = 'display:block;'
        populationFunc(sortedCountries)
         togglerButtons = !togglerButtons
-        
+       // window.scrollTo(0,1000)
+        //document.querySelector('.datas').textContent(this.textContent)
+       
+        //location.href = "http://localhost:5500";
    }else{
-       buttonsdiv.style.cssText = 'display:none;'
-       document.querySelector('.datas').innerHTML = ''
+      // buttonsdiv.style.cssText = 'display:none;'
+       //document.querySelector('.datas').innerHTML = ''
+        
         togglerButtons = !togglerButtons
         
    }

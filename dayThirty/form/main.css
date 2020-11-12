@@ -1,0 +1,23 @@
+body{
+    text-align:center;
+    background-color: #FFFFFF;
+}
+.container{
+    width:40%;
+    margin:auto;
+}
+.form{
+    font-size:21px;
+    text-align:left;
+}
+input{
+    padding:7px;
+    width:100%;
+    margin:0px 0px;
+}
+p{
+    font-size:15px;
+}
+.form p{
+    color:orange;
+}

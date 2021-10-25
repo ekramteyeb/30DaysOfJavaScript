@@ -1,2 +1,2 @@
 # 30DaysOfJavaScript
-traing course by Asabeneh
+traing course by Asabeneh T.
